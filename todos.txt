@@ -1,2 +1,4 @@
-show
-hear
+prepare
+shower
+play
+fix
