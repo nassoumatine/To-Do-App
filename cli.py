@@ -1,3 +1,5 @@
+# name cli.py means: command line interface.py
+
 import functions
 import time
 
@@ -10,7 +12,7 @@ while True:
     user_action = user_action.strip()
 
     if user_action.startswith('add'):
-        todo = user_action [4:] + '\n'
+        todo = user_action[4:] + '\n'
         todo = todo.title()
 
         todos = functions.get_todos()
@@ -49,9 +51,9 @@ while True:
         try:
             number = int(user_action[9:])
 
-            todos =  functions.get_todos()
+            todos = functions.get_todos()
 
-            message = f"Todo \'{todos[number - 1].strip('\n')}\' was completed and removed from the list"
+            message = "Todo " + todos[number - 1].strip('\n') + " was completed and removed from the list"
 
             todos.pop(number - 1)
 
@@ -69,4 +71,3 @@ while True:
         print("Command is not valid.")
 
 print("Bye!")
-
