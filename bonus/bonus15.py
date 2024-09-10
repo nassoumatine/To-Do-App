@@ -4,10 +4,11 @@
 import json
 import time
 
-with open("question.json", 'r') as file:
+with open("bonus15question.json", 'r') as file:
     content = file.read()
 
-data = json.loads(content)  # To change the content type from str to a list because question.json was initially a list
+data = json.loads(content)  # To change the content type from str to a list because bonus15question.json was
+# initially a list
 
 for question_dict in data:
     print(question_dict["question_text"])
