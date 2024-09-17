@@ -16,5 +16,9 @@ window = sq.Window("File Compressor", layout=[[label1, input1, choose_button1],
                                               [label2, input2, choose_button2],
                                               [compress_button]])
 
+while True:
+    event, values = window.read()
+    pass
+
 window.read()
 window.close()
